@@ -242,7 +242,7 @@ function generateForecast() {
 				return data.json();
 		}).then(json => {
 				var temps = json.properties;
-				for(var i = 0; i < temps.maxTemperature.values.length; i++) {
+				for(var i = 1; i < temps.maxTemperature.values.length; i++) {
 						var node = document.createElement("LI");
 						var p = document.createElement("p");
 
