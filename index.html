@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sunnyvale Weather</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans">
+  </head>
+  <body onload="generateForecast(); getAlerts();" onresize="update();">
+		<div class="main-page" id="title-block">
+		  <h1>Sunnyvale Weather</h1>
+		  <h4 id="time"></h4>
+		</div>
+		<div class="main-page" id="main-info">
+			<button type="button" onclick="update(); generateForecast(); getAlerts();">Refresh</button>
+      <button type="button" onclick="switchMetric(); update(); generateForecast();">Change units</button>
+		  <ul>
+		    <li id="temperature"></li>
+		    <li id="humidity"></li>
+				<li id="dp"></li>
+		    <li id="pressure"></li>
+		    <li id="windspeed"></li>
+		    <li id="windgust"></li>
+				<li id="winddir"></li>
+		    <li id="rainfall"></li>
+		    <li id="rainrate"></li>
+		    <li id="radiation"></li>
+		    <li id="uvindex"></li>
+		  </ul>
+	  </div>
+    <div class="main-page" id="forecast">
+      <h3>7 Day Forecast</h3>
+      <ul id="fcst"></ul>
+    </div>
+    <div class="main-page" id="radar-div">
+      <h3>Doppler Radar</h3>
+      <img src="https://radar.weather.gov/lite/N0R/MUX_loop.gif"></img>
+    </div>
+    <div class="main-page" id="forecast">
+      <h3>Watches and Warnings</h3>
+      <ul id="alerts"></ul>
+    </div>
+	  <div class="main-page" id="temp-graph"></div>
+    <div class="main-page" id="pressure-graph"></div>
+    <div class="main-page" id="windspeed-graph"></div>
+    <div class="main-page" id="winddir-graph"></div>
+    <div class="main-page" id="rain-graph"></div>
+    <div class="main-page" id="solar-graph"></div>
+
+	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

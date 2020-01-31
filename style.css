@@ -1,0 +1,33 @@
+body {
+	background-color: #444444;
+	font-family: "PT Sans", "Roboto", "Arial";
+}
+
+.main-page {
+	background-color: #eeeeee;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+}
+
+#title-block {
+	color: #ffffff;
+	background-image: url("IMG_1851.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h4 {
+	font-size: 30px;
+}
