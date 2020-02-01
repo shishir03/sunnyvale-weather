@@ -4,7 +4,7 @@ This is a website I made to display the data from my backyard weather station in
 
 ### Bugs / Inconveniences
 
-  *Alerts take a while (around 30 seconds) to display.
-  *When the website is viewed on a phone, it looks super ugly.
-  *The page must be refreshed to view the latest radar image. Clicking the refresh button in the webpage will not suffice.
-  *Only data over the last 24 hours is displayed.
+  * Alerts take a while (around 30 seconds) to display.
+  * When the website is viewed on a phone, it looks super ugly.
+  * The page must be refreshed to view the latest radar image. Clicking the refresh button in the webpage will not suffice.
+  * Only data over the last 24 hours is displayed.
