@@ -20,5 +20,6 @@ os.system('echo "' + str(weather.get("dateutc")) + ',' + str(weather.get("tempf"
           + ',' + str(weather.get("baromrelin")) + ',' + str(weather.get("windspeedmph")) + "," + str(weather.get("windgustmph"))
           + "," + str(weather.get("winddir")) + "," + str(weather.get("dailyrainin")) + "," + str(weather.get("hourlyrainin"))
           + "," + str(weather.get("solarradiation")) + '" >> data.csv')
+os.system("git add --all")
 os.system('git commit -m "Added a new entry"')
 os.system('git push -u origin master')
