@@ -1,2 +1,2 @@
-Timestamp,Temp,Dewpoint,Pressure,Speed,Gust,Direction,Rainfall,Radiation
+Timestamp,Temp,Dewpoint,Pressure,Speed,Gust,Direction,Rainfall,Rainrate,Radiation
 1584222600000,53.4,48.69,29.94,0.4,1.1,226,0.01,0.07,88.45
