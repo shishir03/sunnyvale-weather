@@ -16,6 +16,7 @@ weather = home.last_data
 # Timestamp Temp Dewpoint Pressure Speed Gust Dir Rainfall Rainrate Radiation
 
 os.system("cd shishir03.github.io")
+os.system("git pull")
 os.system('echo "' + str(weather.get("dateutc")) + ',' + str(weather.get("tempf")) + ',' + str(weather.get("dewPoint"))
           + ',' + str(weather.get("baromrelin")) + ',' + str(weather.get("windspeedmph")) + "," + str(weather.get("windgustmph"))
           + "," + str(weather.get("winddir")) + "," + str(weather.get("dailyrainin")) + "," + str(weather.get("hourlyrainin"))
