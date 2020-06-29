@@ -27,7 +27,7 @@ function update() {
 
 				document.getElementById("temperature").innerHTML = "Temperature: " + (metric ? fToC(first.tempf) : first.tempf) + (metric ? " C" : " F");
 				document.getElementById("humidity").innerHTML = "Humidity: " + first.humidity + "%";
-				document.getElementById("dp").innerHTML = "Dew Point: " + roundToOnePlace(metric ? fToC(first.dewPoint) : first.tempf) + (metric ? " C" : " F");
+				document.getElementById("dp").innerHTML = "Dew Point: " + roundToOnePlace(metric ? fToC(first.dewPoint) : first.dewPoint) + (metric ? " C" : " F");
 				document.getElementById("pressure").innerHTML = "Pressure: " + roundToOnePlace(metric ? 1013.25*first.baromrelin/29.92 : first.baromrelin) + (metric ? " hPa" : " inHg");
 				document.getElementById("windspeed").innerHTML = "Wind Speed: " + roundToOnePlace(metric ? first.windspeedmph*0.44704 : first.windspeedmph) + (metric ? " m/s" : " mph");
 				document.getElementById("windgust").innerHTML = "Wind Gust: " + roundToOnePlace(metric ? first.windgustmph*0.44704 : first.windgustmph) + (metric ? " m/s" : " mph");
@@ -114,6 +114,10 @@ function update() {
 						"height": 400,
 						"vAxis": {
 							"title": metric ? 'Wind Speed (m/s)' : "Wind Speed (mph)",
+							"viewWindow": {
+								"min": 0,
+								"max": 360
+							}
 						}
 				};
 
