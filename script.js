@@ -114,10 +114,6 @@ function update() {
 						"height": 400,
 						"vAxis": {
 							"title": metric ? 'Wind Speed (m/s)' : "Wind Speed (mph)",
-							"viewWindow": {
-								"min": 0,
-								"max": 360
-							}
 						}
 				};
 
@@ -144,7 +140,11 @@ function update() {
 						"width": graphArea.clientWidth*0.95,
 						"height": 400,
 						"vAxis": {
-							"title": "Wind Direction (deg)"
+							"title": "Wind Direction (deg)",
+							"viewWindow": {
+									"min": 0,
+									"max": 360
+							}
 						}
 				}
 
@@ -246,7 +246,7 @@ function generateForecast() {
 				return data.json();
 		}).then(json => {
 				var temps = json.properties;
-				for(var i = 1; i < temps.maxTemperature.values.length; i++) {
+				for(var i = 0; i < temps.maxTemperature.values.length; i++) {
 						var node = document.createElement("LI");
 						var p = document.createElement("p");
 
